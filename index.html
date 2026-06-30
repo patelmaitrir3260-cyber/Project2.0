@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link
+  href="https://cdn.jsdelivr.net/npm/remixicon@4.9.0/fonts/remixicon.css"
+  rel="stylesheet"
+/>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    
+   <div class="registerBox">
+     <div class="register">
+       <div class="top">
+         <h2>Create Account</h2>
+        <p>Join FinTrack Pro</p>
+       </div>
+        <form id="registerform" >
+            <label for="username">Choose a username</label>
+            <input id="username" type="text" placeholder="Choose a Username">
+            <label for="password">Password</label>
+            <input id="password" type="text" placeholder="Password">
+            <input type="submit" id="resg">
+        </form>
+        <div class="bottom">
+            <p>Already have an account?</p>
+            <button id="btn1">Login here</button>
+        </div>
+    </div>
+   </div>
+     <div class="loginBox">
+       <div class="login">
+       <div class="top">
+         <h2>Welcome Back</h2>
+        <p>Login to FinTrack Pro</p>
+       </div>
+        <form action="">
+            <label for="username">Username</label>
+            <input id="username" type="text" placeholder="Choose a Username">
+            <label for="password">Password</label>
+            <input id="password" type="text" placeholder="Password">
+           <input type="submit" id="login">
+    
+</button>
+        </form>
+        <div class="bottom">
+            <p>Don't have an account?</p>
+            <button id="btn2">Register here</button>
+        </div>
+    </div>
+     </div>
+
+
+
+   <main>
+     <div class="FinTrack">
+          <div class="left">  
+            <div class="Top">
+                <div class="part1">
+              <div class="logo">
+                <i class="ri-stack-fill"></i>
+              </div>
+              <div class="track">
+                <h3>FinTrack Pro</h3>
+                <p>Enterprice Finance</p>
+              </div>
+            </div>
+            <div class="part2">
+              <div class="dash">
+                 <img data-v-67bfaa28="" class="img2" src="https://assets.streamlinehq.com/image/private/w_68,h_68,ar_1/f_auto/v1/icons/layouts/border-full-0ydv18iq2dgm43f6ezier05.png/border-full-hu706y5nqpvlpjt0bskv9.png?_a=DATAiZiuZAA0" alt="Border Full">
+               <h4>Dashboard</h4>
+              </div>
+              <div class="setting">
+                <i class="ri-settings-3-fill"></i>
+                <h4>Settings</h4>
+              </div>
+            </div>
+            </div>
+            <div class="plus">
+                <button id="plus">+ Add Transaction</button>
+            </div>
+        </div>
+          <div class="right">
+            <div class="nav">
+            <h4><span id="userid">name</span></h4>
+            <button id="logout"> <i class="ri-corner-up-right-double-fill"></i>Logout</button>
+        </div>
+             <div class="middle">
+            <div class="top-nav">
+                <h1>Financial Overview</h1>
+                <p>Real-time tracking application</p>
+            </div>
+            <div class="topLeft">
+               <div class="ing">
+            <i class="ri-bank-fill"></i>
+               </div>
+                <h3>Current Balance</h3>
+                <h1>$<span id="current">0.00</span></h1>
+            </div>
+            <div class="topmiddle">
+              <div class="ing">
+                <img src="  https://tse3.mm.bing.net/th/id/OIP._Wsr0k8NpMWBLN5qd0NeVAHaHa?pid=Api&P=0&h=180" alt="">
+              </div>
+              <h3>Total Income</h3>
+              <h1>$<span id="total">0.00</span></h1>
+            </div>
+            <div class="topmiddle2">
+              <div class="ing">
+                 <i class="fa-solid fa-arrow-trend-down"></i> 
+              </div>
+              <h3>Total Expense </h3>
+              <h1>$<span id="expense">0.00</span></h1>
+            </div>
+            <div class="topright">
+                <div class="ing">
+                    <i class="fa-solid fa-piggy-bank"></i>
+                </div>
+                <h3>Total Transaction</h3>
+                <h1><span id="count">0</span></h1>
+            </div>
+            <div class="graph">
+                <h1>Cash Flow Analysis</h1>
+                 <div class="chart-container">
+    <canvas id="myChart"></canvas>
+</div>
+            </div>
+            <div class="mode">
+                <h2>Preferences</h2>
+                <div class="change">
+                    <h3>Dark Mode</h3>
+                    <div id="color">
+                        <button id="Darkmod"></button>
+                    </div>
+                   
+                </div>
+ <hr>
+                    <button id="ResetData"><i class="ri-delete-bin-7-fill"></i> Reset All Data</button>
+            </div>
+            <div class="transaction">
+                <h1>All Transaction</h1>
+                <div class="search">
+                    <input type="text" placeholder="Search transction...">
+                  <select name="" id="type">
+                    <option value="">All type</option>
+<option value="">Income</option>
+<option value="">Expense</option>
+                  </select>
+                        
+                    </option>
+                </div>
+               <div class="Adding">
+                 <div class="reserve">
+                    <div class="Data">
+                        <h4>DATA</h4>
+                    </div>
+                  <div class="Description">
+                    <h4>DESCRIPTION</h4>
+                  </div>
+                  <div class="Category">
+                    <h4>CATEGORY</h4>
+                  </div>
+                  <div class="Amount">
+                    <h4>AMOUNT</h4>
+                  </div>
+                  <div class="Type">
+                    <h4>TYPE</h4>
+                  </div>
+                </div>
+               </div>
+            </div>
+
+        </div>
+        </div> 
+    </div>
+
+
+   <div class="saveTransaction">
+     <div class="save">
+      <h1>Add Transction</h1>
+      <form action="">
+        <label for="Type">Type</label>
+       <select name="type" id="Type">
+        <option value="Expense">Expense</option>
+        <option value="Income">Income</option>
+       </select>
+       <label for="Des">Description</label>
+       <input id="Des" type="text" placeholder="e.g. Amozon, Salary, coffee">
+       <label for="Amount">Amount</label>
+       <input id="Amount" type="number">
+       <label for="Date">Date</label>
+       <input id="Date" type="date">
+       <label for="cat">Category</label>
+       <select name="" id="cat">
+        <option value="Food & Dining">Food & Dining</option>
+        <option value="Shopping">Shopping</option>
+        <option value="Recharge & Bill">Recharge & Bill</option>
+        <option value="Utilities">Utilities</option>
+        <option value="Salary">Salary</option>
+        <option value="Enterinment">Enterinment</option>
+        <option value="other">other</option>
+       </select>
+       <input id="Sv" type="submit" placeholder="Save Transaction">
+      </form>
+    </div>
+   </div>
+   </main>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="scriipt.js"></script>
+</body>
+</html>

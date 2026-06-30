@@ -1,0 +1,563 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html,body{
+    width: 100%;
+    height: 100%;
+   
+   
+}
+.registerBox{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ display: none;
+  
+}
+.register{
+    text-align: center;
+    padding: 22px;
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 12px;
+     box-shadow: 0 4px 10px rgba(196, 213, 230, 0.5);   
+}
+.register .top{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+.register form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+.register form input{
+    padding: 8px;
+    border-radius: 12px;
+    border: 1px solid rgb(211, 202, 202);
+}
+.register form label{
+    font-size: 18px;
+}
+ .register form #resg{
+     padding: 9px;
+    border: 1px solid white;
+    border-radius: 12px;
+    font-size: 18px;
+    background-color:green;
+    color: white;
+    cursor: pointer;
+}
+.register .bottom{
+    text-align: center;
+   display: flex;
+   justify-content: center;
+}
+.register .bottom button{
+    border: 1px solid white;
+    background-color:white;
+    color: blue;
+    cursor: pointer;
+}
+.loginBox{
+   
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+     /* display: none; */
+    
+}
+.login{
+  
+    text-align: center;
+    padding: 22px;
+    width: 400px;
+    height: 400px;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 12px;
+     box-shadow: 0 4px 10px rgba(196, 213, 230, 0.5);   
+}
+.login .top{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 18px;
+}
+.login form{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    justify-content: center;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+.login form input{
+    padding: 8px;
+    border-radius: 12px;
+    border: 1px solid rgb(211, 202, 202);
+}
+.login form label{
+    font-size: 18px;
+}
+form #login{
+    padding: 9px;
+    border: 1px solid white;
+    border-radius: 12px;
+    font-size: 18px;
+    background-color:rgb(52, 52, 240);
+    color: white;
+    cursor: pointer;
+}
+.login .bottom{
+    text-align: center;
+   display: flex;
+   justify-content: center;
+}
+.login .bottom button{
+    border: 1px solid white;
+    background-color:white;
+    color: blue;
+    cursor: pointer;
+}
+.FinTrack{
+  min-height: 100vh;
+  width: 100%;
+    display:flex;
+    display: none;
+
+}
+.left{
+    width: 250px;
+    padding: 10px;
+    display:flex ;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color:white;
+    border-right: 1px solid rgba(0, 0, 0, 0.305);
+   
+}
+.left .plus{
+    position: fixed;
+    bottom: 10px;
+}
+.left .part1{
+    display: flex;
+}
+.img2{
+    width: 15px;
+    width: 17px;
+}
+.dash{
+    color: #000000;
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    gap: 5px;
+    border:none;
+    margin-bottom: 12px;
+    background-color: rgba(1, 250, 204, 0.258);
+}
+.dash h4{
+    color: #013a29;
+    font-size: 17px;
+    font-weight: 900;
+}
+.setting{
+    border-radius: 8px;
+    padding: 12px;
+    display: flex;
+    gap: 5px;
+    border: 1px solid white; 
+}
+.plus button{
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 500;
+    padding: 8px 20px;
+    background-color: black;
+    color: #fff;
+}
+.left .Top{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+.right{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+.nav{
+    height: 70px;
+    text-align: center;
+    display: flex;
+      flex-shrink: 0;
+    justify-content: end;
+    gap: 10px;
+    align-items: center;
+    background-color: white;
+    border-bottom: 1px solid rgba(224, 15, 15, 0.308);
+}
+.nav #logout{
+    color: black;
+    font-weight: 700;
+    background-color: white;
+    margin-right: 15px;
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.466);
+    padding: 12px;
+}
+.middle{
+    flex: 1;
+      position: relative;
+    gap: 8px;
+   padding: 10px;
+    grid-area: middle;
+  background-color: #ebe7e7;
+    display: grid;
+     grid-template-columns: 1fr 1fr 0.5fr 0.5fr 1fr ;
+    grid-template-rows: 70px 170px 350px auto;
+   grid-template-areas: 
+   "top-nav top-nav top-nav top-nav top-nav "
+   "topLeft topmiddle topmiddle2 topmiddle2 topright"
+   "graph graph graph mode mode"
+   " tran  tran  tran  tran  tran"
+}
+.top-nav{
+    
+    grid-area: top-nav;
+    background-color:transparent;
+}
+.topLeft{
+    padding: 15px;
+    border-radius: 12px;
+    border: 2px solid rgba(0, 0, 0, 0.271);
+    grid-area: topLeft;
+    background-color:#fff;
+}
+.topLeft h1{
+    color: #0e26af;
+}
+.topLeft h3{
+font-size: 17px;
+font-weight: 400;
+}
+.topLeft .ing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #2196f3;
+    border-radius: 10px;
+}
+.ing i{
+    font-size: 30px;
+    color: #010d50;
+}
+.topmiddle{
+    padding: 15px;
+     border-radius: 12px;
+    border: 2px solid rgba(0, 0, 0, 0.271);
+    grid-area: topmiddle;
+    background-color: #fff;
+}
+.topmiddle h3{
+font-size: 17px;
+font-weight: 400;}
+.topmiddle .ing{
+    overflow: hidden;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #2196f3;
+    border-radius: 10px;
+}
+.ing img{
+border-radius: 8px;
+    width: 37px;
+    color: #010d50;
+}
+.topmiddle2{
+    padding: 15px;
+     border-radius: 12px;
+    border: 2px solid rgba(0, 0, 0, 0.271);
+    grid-area: topmiddle2;
+    background-color: #fff;
+}
+.topmiddle2 h1{
+    color: red;
+}
+.topmiddle2 h3{
+font-size: 17px;
+font-weight: 400;
+}
+.topmiddle2 .ing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #f321218d;
+    border-radius: 10px;
+}
+.topmiddle2 .ing i{
+    font-size: 30px;
+    color: rgb(84, 5, 5);
+}
+.topright{
+    padding: 15px;
+     border-radius: 12px;
+    border: 2px solid rgba(0, 0, 0, 0.271);
+    grid-area: topright;
+    background-color: #fff;
+}
+.topright h3{
+font-size: 17px;
+font-weight: 400;
+}
+.topright .ing{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: #212ff367;
+    border-radius: 10px;
+}
+.topright .ing i{
+    font-size: 30px;
+    color: rgb(5, 10, 84);
+}
+.graph{
+    overflow: hidden;
+    padding: 12px;
+     border-radius: 12px;
+    border: 2px solid rgba(0, 0, 0, 0.271);
+    grid-area: graph;
+    background-color: #fff;
+}
+.mode{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+     border-radius: 12px;
+    border: 2px solid rgba(0, 0, 0, 0.271);
+    grid-area: mode;
+    background-color: #fff;
+}
+.mode .change{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 18px;
+}
+.mode .change div{
+    position: relative;
+    width: 50px;
+    height: 26px;
+    border-radius: 50px;
+    background: gray;
+}
+
+#Darkmod{
+    position: absolute;
+    left: 2px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: none;
+    border-radius: 50%;
+    background: white;
+    transition: all .3s;
+}
+
+body.position #Darkmod{
+    left: calc(100% - 22px);
+}
+
+.mode #ResetData{
+    font-size: 16px;
+    font-weight: 700;
+    border: 1px solid #e48b8b;
+    border-radius: 12px;
+    padding: 10px;
+    color: #991B1B;
+    background-color: white;
+    cursor: pointer;
+}
+.transaction{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+     border-radius: 12px;
+    border: 2px solid rgba(0, 0, 0, 0.271);
+    grid-area: tran;
+    background-color:#fff;
+}
+.left .part1{
+    display: flex;
+}
+.img2{
+    width: 15px;
+    width: 17px;
+}
+.chart-container{
+    width:700px;
+    margin:auto;
+}
+.search{
+    display: flex;
+    gap: 12px;
+}
+.search input{
+    border: none;
+    background-color: #ebe7e7;
+    padding: 6px;
+    border-radius: 8px;
+    width: 270px;
+}
+.search select{
+    padding: 5px;
+    width: 270px;
+     border-radius: 8px;
+     border: none;
+     background-color: #ebe7e7;
+}
+.reserve{
+    font-size: 15px;
+    font-weight: 100;
+    display: flex;
+    gap: 45px;
+
+}
+body.dark{
+    background-color: #121212;
+}
+main{
+    height: 100%;
+    width: 100%;
+}
+body.mid .middle,
+body.mid .saveTransaction{
+    background-color: #111827;
+    color: #fff;
+}
+body.dark .nav,
+body.dark .left
+{
+    background-color:  #1F2937;
+    color: white;
+    color: white;
+}
+body.box .topLeft,
+body.box .topmiddle,
+body.box .topmiddle2,
+body.box .topright,
+body.box .graph,
+body.box .mode,
+body.box .transaction{
+background-color: #1F2937;
+color: white;
+}
+body.colar #color{
+    display: flex;
+    justify-items: end;
+    background-color:blue ;
+}
+body.position  #Darkmod{
+   right: 1px;
+}
+.saveTransaction{
+    height: 100%;
+    width: 100%; 
+    display: flex;
+     position: absolute;
+   left: 0;
+   top: 0;
+   background-color: rgba(0, 0, 0, 0.181);
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+.saveTransaction .save{
+  
+    width: 400px;
+    height: 450px;
+    border: 1px solid black;
+    background-color: white;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    padding:12px;
+    gap: 10px;
+}
+.saveTransaction .save form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.saveTransaction .save form select{
+    background-color: #ebe7e7;
+    font-size: 15px;
+    padding: 6px;
+    border-radius: 10px;
+}
+.saveTransaction .save form input{
+    background-color: #ebe7e7;
+    border-radius: 10px;
+    border: 1px solid black;
+    padding: 6px;
+    
+}
+#Sv{
+background-color: black;
+color: white;
+font-size: 17px;
+font-weight: 700;
+}
+.Data{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.Description{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.Category{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.Amount{
+     display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.Type{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
