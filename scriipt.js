@@ -227,12 +227,16 @@ if(description.trim()==""||amount.trim()==""){
     saveTransaction.style.display="none";
 }
 if(delt.target[0].value==="Income"){
-    total.textContent=totalval+Number(delt.target[2].value);
-    current.textContent=currentincome+Number(delt.target[2].value)
+    totalval+=Number(delt.target[2].value);
+    total.textContent=totalval;
+    currentincome+=Number(delt.target[2].value);
+    current.textContent=currentincome;
     count.textContent=arr2.length;
 }else{
-    expense.textContent=expenseval+Number(delt.target[2].value);
-    current.textContent=currentincome-Number(delt.target[2].value)
+    expenseval+=Number(delt.target[2].value);
+    expense.textContent=expenseval;
+    currentincome-=Number(delt.target[2].value)
+    current.textContent=currentincome;
     count.textContent=arr2.length;
 }
 Data.append(document.createElement("h4").textContent=delt.target[3].value);
@@ -245,7 +249,7 @@ FinTrack.style.display="flex";
 delt.target[1].value="";
 delt.target[2].value="";
 delt.target[3].value="";
-delt.target[4].value="";
+
 })
 logout.addEventListener("click",()=>{
     localStorage.removeItem("isLoggedIn");
